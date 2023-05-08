@@ -13,11 +13,6 @@ const destinationPath = path.join(__dirname, destinationDir);
 const cssFiles = fs.readdirSync(sourcePath)
   .filter(file => path.extname(file) === '.css');
 
-// const content = cssFiles.reduce((acc, file) => {
-//   const css = fs.readFileSync(path.join(sourcePath, file), 'utf-8');
-//   return acc + css;
-// }, '');
-
 // собираем и записываем содержимое всех css
 let contentStyle = '';
 
@@ -32,6 +27,6 @@ if (!fs.existsSync(destinationPath)) {
 }
 
 // записываем содержимое в bundle.css в папку dist
-fs.writeFileSync(path.join(destinationPath, filename), content, 'utf-8');
+fs.writeFileSync(path.join(destinationPath, filename), contentStyle, 'utf-8');
 // выводим сообщение
 console.log(`${filename} был создан!`);
