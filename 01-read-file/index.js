@@ -1,5 +1,5 @@
 const fs = require('fs');
-const fileStream = fs.createReadStream('text.txt');
+const fileStream = fs.createReadStream('01-read-file/text.txt');
 
 fileStream.on('data', (chunk) => {
   console.log(chunk.toString());
