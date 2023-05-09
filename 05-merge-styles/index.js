@@ -32,6 +32,7 @@
 // console.log(`${filename} был создан!`);
 
 // ПОПРАВИЛ промисами
+
 const fs = require('fs').promises;
 const path = require('path');
 

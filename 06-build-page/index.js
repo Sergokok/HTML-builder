@@ -81,7 +81,6 @@
 // console.log("Проект собран в директории 'project-dist'...");
 
 // поправил с промисами
-
 const fs = require("fs").promises;
 const path = require("path");
 
